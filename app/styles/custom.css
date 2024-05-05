@@ -1,0 +1,13 @@
+@import '../fonts/Charmonman & Inika/stylesheet.css';
+@import '../fonts/DMSerifDisplay/stylesheet.css';
+
+.mytitle {
+    font-family: 'DM Serif Display';
+}
+
+.myname {
+    font-family: 'Charmonman';
+    font-weight: 800;
+    font-size: 1.2rem;
+    letter-spacing: 3px
+}
