@@ -1,0 +1,1 @@
+A digital timer that counts the time elapsed since it was started. It typically displays hours, minutes, seconds, and milliseconds or centiseconds. The stopwatch can be started, stopped, and reset as needed. The start button begins the timer, the stop button pauses it, and the reset button resets the time to zero.
