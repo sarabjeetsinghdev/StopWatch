@@ -3,6 +3,27 @@
 
 .mytitle {
     font-family: 'DM Serif Display';
+    font-size: 10vw;
+}
+
+.timefont {
+    font-size: 8vw;
+}
+
+.centerized {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@media (min-width: 768px) {
+    .mytitle {
+        font-size: 4vw;
+    }
+    .timefont {
+        font-size: 5vw;
+    }
 }
 
 .myname {

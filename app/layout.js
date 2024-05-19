@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className='bodyColor' style={{ minWidth: '100dvw', minHeight: '100dvh' }}>
         <Providers>
           {children}
         </Providers>
