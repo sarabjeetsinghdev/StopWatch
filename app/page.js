@@ -20,7 +20,7 @@ const Main = () => {
         <div className={`myname mb-3 ${color === 'bg-success-600' ? 'text-white' : ''} ${color === 'bg-danger' ? 'text-white' : ''} ${color === 'bg-yellow-300' ? 'text-dark' : ''}`}>By Sarabjeet</div>
         <Container>
           <div className={`timefont text-nowrap fw-bold border border-dark rounded-4 px-3 py-2 ${color === 'bg-danger' ? 'text-white' : ''} ${color === 'bg-yellow-300' ? 'text-dark' : ''} ${(color === 'bg-success-600') ? 'text-stone-200' : ''}`}>
-            {Tabled_State.Hour < 9 && '0'}{Tabled_State.Hour} : {Tabled_State.Minute < 10 && '0'}{Tabled_State.Minute} : {Tabled_State.Second < 10 && '0'}{Tabled_State.Second} : {Tabled_State.Millisecond < 10 && '0'}{Tabled_State.Millisecond}
+            {Tabled_State.Hour < 9 && '0'}{Tabled_State.Hour} : {Tabled_State.Minute < 10 && '0'}{Tabled_State.Minute} : {Tabled_State.Second < 10 && '0'}{Tabled_State.Second}
           </div>
         </Container>
         <br />

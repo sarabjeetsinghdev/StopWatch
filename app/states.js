@@ -6,25 +6,15 @@ const Table_State = () => {
     let [H, setH] = React.useState(0)
     let [M, setM] = React.useState(0)
     let [S, setS] = React.useState(0)
-    let [MS, setMS] = React.useState(0)
     let [startDisabled, setstartDisabled] = React.useState(false)
     let [TimerObjKeeper, setTimerObjKeeper] = React.useState(null)
     const StartTimer = React.useCallback(() => {
         setstartDisabled(true)
         return setInterval(() => {
             // Base Logic
-            if (Base === 9) {
-                Base = 0
-                setMS(++MS)
-            }
-            setBaseCount(++Base)
+            setS(++S)
 
-            // Millisecond Logic
-            if (MS === 9) {
-                MS = 0
-                setMS(0)
-                setS(++S)
-            }
+            // setBaseCount(++Base)
 
             // Second Logic
             if (S === 60) {
@@ -45,8 +35,8 @@ const Table_State = () => {
                 H = 0
                 setH(0)
             }
-        }, 10)
-    }, [H, M, S, MS])
+        }, 1000)
+    }, [H, M, S])
     const StopTimer = React.useCallback((Starter) => {
         clearInterval(Starter)
     }, [])
@@ -55,13 +45,11 @@ const Table_State = () => {
         setH(0)
         setM(0)
         setS(0)
-        setMS(0)
-    }, [setH, setM, setS, setMS])
+    }, [setH, setM, setS])
     return {
         Hour: H,
         Minute: M,
         Second: S,
-        Millisecond: MS,
         TimerObjKeeper: TimerObjKeeper,
         startDisabled: startDisabled,
         setTimerObjKeeper: setTimerObjKeeper,
